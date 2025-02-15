@@ -33,7 +33,7 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
                 <img
-                  src="/your-profile-image.jpg" // Replace with your actual image path in the public folder
+                   src="/Profile_pic.jpg" // Reference image directly from the public folder
                   alt="Semilogo Olusola OGUNGBURE"
                   className="rounded-lg shadow-lg"
                 />
