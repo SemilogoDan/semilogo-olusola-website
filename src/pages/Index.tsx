@@ -8,18 +8,18 @@ const Index = () => {
       <Header />
       <main className="flex-grow pt-16">
         {/* Hero Section */}
-        <section className="bg-gradient-to-b from-blue-50 to-white">
+        <section className="bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
             <div className="text-center">
-              <h1 className="text-4xl sm:text-6xl font-bold text-gray-900 mb-6">
+              <h1 className="text-4xl sm:text-6xl font-bold text-gray-900 dark:text-white mb-6">
                 Electrical Engineering
               </h1>
-              <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+              <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
                 Specializing in Information Communication Technology (ICT) and Power Systems
               </p>
               <a
                 href="#projects"
-                className="inline-block bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors"
+                className="inline-block bg-primary text-white dark:bg-white dark:text-gray-900 px-8 py-3 rounded-lg hover:bg-primary/90 dark:hover:bg-white/90 transition-colors"
               >
                 View Projects
               </a>
@@ -33,7 +33,7 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
                 <img
-                  src="/your-profile-image.jpg" // You'll need to add your profile image to the public folder
+                  src="/your-profile-image.jpg" // Replace with your actual image path in the public folder
                   alt="Semilogo Olusola OGUNGBURE"
                   className="rounded-lg shadow-lg"
                 />
@@ -64,11 +64,36 @@ const Index = () => {
               </div>
               <div>
                 <h2 className="text-3xl font-bold mb-6">About Me</h2>
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-600 dark:text-gray-300 mb-6">
                   Recent graduate with a Master's degree in Electrical Engineering, specializing in Information Communication Technology (ICT).
                   Possessing hands-on experience with LAN/WAN systems, Software Defined Networking (SDN), and network security.
                 </p>
-                <ul className="space-y-2 text-gray-600">
+                <div className="mb-6">
+                  <h3 className="text-xl font-semibold mb-3">Scholarships</h3>
+                  <ul className="space-y-2 text-gray-600 dark:text-gray-300">
+                    <li>
+                      <a 
+                        href="https://www.scholarship-link.com" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="hover:text-primary"
+                      >
+                        ✓ Agbami Scholarship (2013-2016)
+                      </a>
+                    </li>
+                    <li>
+                      <a 
+                        href="https://www.scholarship-link.com" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="hover:text-primary"
+                      >
+                        ✓ Professor Olufolaji D.B Scholarship Prize (2014)
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <ul className="space-y-2 text-gray-600 dark:text-gray-300">
                   <li>✓ Network Infrastructure & Security</li>
                   <li>✓ AI/ML Model Development</li>
                   <li>✓ Power Systems Design</li>
@@ -80,7 +105,7 @@ const Index = () => {
         </section>
 
         {/* Education Section */}
-        <section className="education-section py-24 bg-gray-50">
+        <section className="education-section py-24 bg-gray-50 dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-center mb-12">Education</h2>
             <div className="space-y-8 max-w-3xl mx-auto">
@@ -109,9 +134,9 @@ const Index = () => {
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="project-section py-24 bg-gray-50">
+        <section id="projects" className="project-section py-24 bg-gray-50 dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-center mb-12">Featured Projects</h2>
+            <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Featured Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
@@ -124,7 +149,7 @@ const Index = () => {
                   title: "Voice Isolation System",
                   description: "Python program using PyTorch to isolate vocals from audio signals",
                   image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
-                  link: "https://github.com/SilogoDan/Voice_Isolation",
+                  link: "https://github.com/SemilogoDan/Voice_Isolation",
                 },
                 {
                   title: "Personal VPN over TOR",
@@ -133,20 +158,24 @@ const Index = () => {
                   link: "https://medium.com/@SemilogoDan/tor-personal-vpn-exploring-home-based-and-cloud-based-solutions-for-personal-vpn-over-tor-57e6ae0c100d",
                 },
               ].map((project, index) => (
-                <div key={index} className="bg-white rounded-lg overflow-hidden shadow-lg">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-48 object-cover"
-                  />
+                <div key={index} className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg group relative">
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-48 object-cover transition-opacity duration-300"
+                    />
+                    <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-6">
+                      <p className="text-white text-center">{project.description}</p>
+                    </div>
+                  </a>
                   <div className="p-6">
-                    <h3 className="text-xl font-semibold mb-2 project-title">{project.title}</h3>
-                    <p className="text-gray-600 mb-4">{project.description}</p>
+                    <h3 className="text-xl font-semibold mb-2 project-title dark:text-white">{project.title}</h3>
                     <a 
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-primary hover:text-primary/90"
+                      className="text-primary dark:text-white hover:text-primary/90 dark:hover:text-gray-300"
                     >
                       View Project →
                     </a>
