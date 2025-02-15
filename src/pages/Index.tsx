@@ -114,7 +114,7 @@ const Index = () => {
                   <GraduationCap className="text-gray-900" size={24} />
                   <h3 className="text-xl font-semibold">Master of Science in Electrical Engineering</h3>
                 </div>
-                <p className="text-gray-600">Vrije Brussels Universiteit (VUB) • 2021-2024</p>
+                <p className="text-gray-600">Vrije Brussels Universiteit (VUB)/ULB • 2024</p>
                 <p className="text-gray-600 mt-2">
                   Network Security, Communication Networks, Machine Learning & Big Data
                 </p>
@@ -126,7 +126,7 @@ const Index = () => {
                 </div>
                 <p className="text-gray-600">Federal University of Technology Akure (FUTA) • 2011-2016</p>
                 <p className="text-gray-600 mt-2">
-                  Control Systems, Digital Communication, Numerical Analysis
+                  Control Systems, Digital Communication, Power System Analysis
                 </p>
               </div>
             </div>
@@ -140,10 +140,10 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
-                  title: "AI-Driven Product Quality",
-                  description: "Coupling of Process Parameters and Inspection data using AI to enhance product quality",
-                  image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
-                  link: "https://github.com/SemilogoDan/product-quality-ai",
+                  title: "Design of Two Stages Operational Amplifier",
+                  description: "This project focuses on designing a two-stage operational amplifier to meet key parameters like DC gain, phase margin, and frequency response.",
+                  image: "OTA Two stages.png",
+                  link: "https://github.com/SemilogoDan/Analog-Electronics-Design/blob/main/AE2021-2022%20-%20Project%20Report%20Semilogo%20Olusola%20PDF.pdf",
                 },
                 {
                   title: "Voice Isolation System",
