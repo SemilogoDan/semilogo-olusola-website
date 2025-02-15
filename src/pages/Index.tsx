@@ -124,13 +124,13 @@ const Index = () => {
                   title: "Voice Isolation System",
                   description: "Python program using PyTorch to isolate vocals from audio signals",
                   image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
-                  link: "https://github.com/SemilogoDan/voice-isolation",
+                  link: "https://github.com/SilogoDan/Voice_Isolation",
                 },
                 {
                   title: "Personal VPN over TOR",
                   description: "Secure personal VPN implementation over the TOR network",
                   image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
-                  link: "https://github.com/SemilogoDan/vpn-tor",
+                  link: "https://medium.com/@SemilogoDan/tor-personal-vpn-exploring-home-based-and-cloud-based-solutions-for-personal-vpn-over-tor-57e6ae0c100d",
                 },
               ].map((project, index) => (
                 <div key={index} className="bg-white rounded-lg overflow-hidden shadow-lg">
