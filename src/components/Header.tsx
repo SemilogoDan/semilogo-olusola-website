@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { useTheme } from "next-themes";
 import { Moon, Sun } from "lucide-react";
@@ -34,7 +35,7 @@ export const Header = () => {
                 Contact
               </a>
               <a 
-                href="/resume.pdf" 
+                href="/SemilogoOlusola_CV.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-sm font-medium hover:text-primary"

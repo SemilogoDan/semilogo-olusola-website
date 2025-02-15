@@ -12,10 +12,10 @@ const Index = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
             <div className="text-center">
               <h1 className="text-4xl sm:text-6xl font-bold text-gray-900 mb-6">
-                Full Stack Developer
+                Electrical Engineering
               </h1>
               <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-                Building modern web applications with cutting-edge technologies.
+                Specializing in Information Communication Technology (ICT) and Power Systems
               </p>
               <a
                 href="#projects"
@@ -33,13 +33,13 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
                 <img
-                  src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
-                  alt="Developer"
+                  src="/your-profile-image.jpg" // You'll need to add your profile image to the public folder
+                  alt="Semilogo Olusola OGUNGBURE"
                   className="rounded-lg shadow-lg"
                 />
                 <div className="flex justify-center mt-6 space-x-4 social-icons">
                   <a
-                    href="https://github.com"
+                    href="https://github.com/SemilogoDan"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-600 hover:text-primary transition-colors"
@@ -47,7 +47,7 @@ const Index = () => {
                     <Github size={24} />
                   </a>
                   <a
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/in/SemilogoDan"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-600 hover:text-primary transition-colors"
@@ -55,7 +55,7 @@ const Index = () => {
                     <Linkedin size={24} />
                   </a>
                   <a
-                    href="mailto:contact@example.com"
+                    href="mailto:semilogoolusola@gmail.com"
                     className="text-gray-600 hover:text-primary transition-colors"
                   >
                     <Mail size={24} />
@@ -65,14 +65,14 @@ const Index = () => {
               <div>
                 <h2 className="text-3xl font-bold mb-6">About Me</h2>
                 <p className="text-gray-600 mb-6">
-                  I'm a passionate full-stack developer with expertise in building scalable web applications.
-                  My focus is on creating efficient, user-friendly solutions using modern technologies.
+                  Recent graduate with a Master's degree in Electrical Engineering, specializing in Information Communication Technology (ICT).
+                  Possessing hands-on experience with LAN/WAN systems, Software Defined Networking (SDN), and network security.
                 </p>
                 <ul className="space-y-2 text-gray-600">
-                  <li>✓ Frontend Development</li>
-                  <li>✓ Backend Development</li>
-                  <li>✓ Database Design</li>
-                  <li>✓ API Development</li>
+                  <li>✓ Network Infrastructure & Security</li>
+                  <li>✓ AI/ML Model Development</li>
+                  <li>✓ Power Systems Design</li>
+                  <li>✓ Cloud Technologies</li>
                 </ul>
               </div>
             </div>
@@ -87,21 +87,21 @@ const Index = () => {
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <div className="flex items-center gap-4 mb-4">
                   <GraduationCap className="text-gray-900" size={24} />
-                  <h3 className="text-xl font-semibold">Master of Computer Science</h3>
+                  <h3 className="text-xl font-semibold">Master of Science in Electrical Engineering</h3>
                 </div>
-                <p className="text-gray-600">University Name • 2020-2022</p>
+                <p className="text-gray-600">Vrije Brussels Universiteit (VUB) • 2021-2024</p>
                 <p className="text-gray-600 mt-2">
-                  Specialized in Software Engineering and Artificial Intelligence
+                  Network Security, Communication Networks, Machine Learning & Big Data
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <div className="flex items-center gap-4 mb-4">
                   <GraduationCap className="text-gray-900" size={24} />
-                  <h3 className="text-xl font-semibold">Bachelor of Computer Science</h3>
+                  <h3 className="text-xl font-semibold">Bachelor's in Engineering</h3>
                 </div>
-                <p className="text-gray-600">University Name • 2016-2020</p>
+                <p className="text-gray-600">Federal University of Technology Akure (FUTA) • 2011-2016</p>
                 <p className="text-gray-600 mt-2">
-                  Focus on Computer Science fundamentals and Software Development
+                  Control Systems, Digital Communication, Numerical Analysis
                 </p>
               </div>
             </div>
@@ -115,19 +115,22 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
-                  title: "E-commerce Platform",
-                  description: "A full-featured online shopping platform",
+                  title: "AI-Driven Product Quality",
+                  description: "Coupling of Process Parameters and Inspection data using AI to enhance product quality",
                   image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
+                  link: "https://github.com/SemilogoDan/product-quality-ai",
                 },
                 {
-                  title: "Task Management App",
-                  description: "Efficient project and task management solution",
+                  title: "Voice Isolation System",
+                  description: "Python program using PyTorch to isolate vocals from audio signals",
                   image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
+                  link: "https://github.com/SemilogoDan/voice-isolation",
                 },
                 {
-                  title: "Portfolio Website",
-                  description: "Modern and responsive portfolio showcase",
+                  title: "Personal VPN over TOR",
+                  description: "Secure personal VPN implementation over the TOR network",
                   image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
+                  link: "https://github.com/SemilogoDan/vpn-tor",
                 },
               ].map((project, index) => (
                 <div key={index} className="bg-white rounded-lg overflow-hidden shadow-lg">
@@ -138,7 +141,15 @@ const Index = () => {
                   />
                   <div className="p-6">
                     <h3 className="text-xl font-semibold mb-2 project-title">{project.title}</h3>
-                    <p className="text-gray-600">{project.description}</p>
+                    <p className="text-gray-600 mb-4">{project.description}</p>
+                    <a 
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:text-primary/90"
+                    >
+                      View Project →
+                    </a>
                   </div>
                 </div>
               ))}
@@ -151,60 +162,68 @@ const Index = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-center mb-12">Certifications</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-                <div className="flex items-center gap-4 mb-4">
-                  <Medal className="text-primary" size={24} />
-                  <h3 className="text-xl font-semibold">AWS Certified Solutions Architect</h3>
+              {[
+                {
+                  title: "Networking Basics",
+                  issuer: "Cisco",
+                  date: "Dec 2024"
+                },
+                {
+                  title: "IT Automation with Python",
+                  issuer: "Google",
+                  date: "Nov 2024"
+                },
+                {
+                  title: "Network Automation Professional",
+                  issuer: "Arista Networks",
+                  date: "Dec 2024"
+                },
+                {
+                  title: "Power BI Data Analyst",
+                  issuer: "Microsoft AI",
+                  date: "Nov 2024"
+                }
+              ].map((cert, index) => (
+                <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                  <div className="flex items-center gap-4 mb-4">
+                    <Medal className="text-primary" size={24} />
+                    <h3 className="text-xl font-semibold">{cert.title}</h3>
+                  </div>
+                  <p className="text-gray-600 dark:text-gray-400">{cert.issuer} • {cert.date}</p>
                 </div>
-                <p className="text-gray-600 dark:text-gray-400">Amazon Web Services • 2023</p>
-                <p className="text-gray-600 dark:text-gray-400 mt-2">
-                  Professional certification for designing distributed systems on AWS
-                </p>
-              </div>
-              <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-                <div className="flex items-center gap-4 mb-4">
-                  <Medal className="text-primary" size={24} />
-                  <h3 className="text-xl font-semibold">Google Cloud Professional</h3>
-                </div>
-                <p className="text-gray-600 dark:text-gray-400">Google • 2023</p>
-                <p className="text-gray-600 dark:text-gray-400 mt-2">
-                  Advanced certification for Google Cloud Platform architecture
-                </p>
-              </div>
+              ))}
             </div>
           </div>
         </section>
 
         {/* Honors & Awards Section */}
-
-{/* Honors & Awards Section */}
-<section className="honors-section py-24">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 className="text-3xl font-bold text-center mb-12">Honors & Awards</h2>
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-      <div className="bg-white p-6 rounded-lg shadow-md">
-        <div className="flex items-center gap-4 mb-4">
-          <Award className="text-primary" size={24} />
-          <h3 className="text-xl font-semibold award-title">Best Graduate Project</h3>
-        </div>
-                <p className="text-gray-600">University Name • 2022</p>
+        <section className="honors-section py-24">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold text-center mb-12">Honors & Awards</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <div className="flex items-center gap-4 mb-4">
+                  <Award className="text-primary" size={24} />
+                  <h3 className="text-xl font-semibold award-title">Agbami Scholarship</h3>
+                </div>
+                <p className="text-gray-600">Agbami Oilfield • 2013-2016</p>
                 <p className="text-gray-600 mt-2">
-                  Awarded for exceptional research and implementation of AI-driven solutions
+                  Scholarship for Engineering and Medical Professions
                 </p>
-      </div>
-      <div className="bg-white p-6 rounded-lg shadow-md">
-        <div className="flex items-center gap-4 mb-4">
-          <Award className="text-primary" size={24} />
-          <h3 className="text-xl font-semibold award-title">Dean's List</h3>
-        </div>
-                <p className="text-gray-600">University Name • 2019-2022</p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <div className="flex items-center gap-4 mb-4">
+                  <Award className="text-primary" size={24} />
+                  <h3 className="text-xl font-semibold award-title">Best Student Award</h3>
+                </div>
+                <p className="text-gray-600">Professor Olufolaji D.B Scholarship Prize • 2014</p>
                 <p className="text-gray-600 mt-2">
-                  Consistently maintained high academic performance throughout the program
+                  Awarded for outstanding academic performance in Year 2
                 </p>
-      </div>
-    </div>
-  </div>
-</section>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Contact Section */}
         <section id="contact" className="contact-section py-24">
