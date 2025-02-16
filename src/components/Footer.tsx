@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+lgoimport { Link } from "react-router-dom";
 import { Github, Linkedin, Mail } from "lucide-react";
 
 export const Footer = () => {
@@ -61,7 +61,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t text-center text-sm text-gray-600">
-          © {new Date().getFullYear()} Portfolio. All rights reserved.
+          © {new Date().getFullYear()} Semilogo. All rights reserved.
         </div>
       </div>
     </footer>
