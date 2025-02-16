@@ -220,7 +220,7 @@ const Index = () => {
                   <div className="space-y-4">
                     <div>
                       <h4 className="text-lg font-semibold mb-2 dark:text-white">Key Responsibilities</h4>
-                      <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300">
+                      <ul className="list-disc pl-5 space-y-2 text-gray-600 dark:text-gray-300">
                         {job.responsibilities.map((responsibility, idx) => (
                           <li key={idx}>{responsibility}</li>
                         ))}
@@ -230,7 +230,7 @@ const Index = () => {
                     {job.achievements.length > 0 && (
                       <div>
                         <h4 className="text-lg font-semibold mb-2 dark:text-white">Achievements</h4>
-                        <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300">
+                        <ul className="list-disc pl-5 space-y-2 text-gray-600 dark:text-gray-300">
                           {job.achievements.map((achievement, idx) => (
                             <li key={idx}>{achievement}</li>
                           ))}
@@ -243,6 +243,7 @@ const Index = () => {
             </div>
           </div>
         </section>
+
 
         {/* Projects Section */}
         <section id="projects" className="project-section py-24 bg-gray-50 dark:bg-gray-900">
