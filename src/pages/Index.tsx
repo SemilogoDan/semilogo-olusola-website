@@ -104,7 +104,7 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Featured Project Section */}
+        {/* Honored to be Featured on Electrical Engineering Portal */}
         <section className="featured-project py-24 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-900 dark:to-gray-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Featured Project</h2>
@@ -126,7 +126,7 @@ const Index = () => {
                 </div>
                 <div>
                   <img 
-                    src="https://electrical-engineering-portal.com/res/Substation-11-04kV.jpg" 
+                    src="EEP.png" 
                     alt="11/0.4kV Substation"
                     className="rounded-lg shadow-md w-full h-full object-cover"
                   />
