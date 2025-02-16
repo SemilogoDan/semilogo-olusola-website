@@ -181,7 +181,9 @@ const Index = () => {
                     "Designed and implemented data pipelines using Microsoft Azure tools, improving data flow efficiency by 20%.",
                     "Supported network monitoring and incident management to maintain network performance."
                   ],
-                  achievements: [Built an efficient AI model of 98% accurate prediction]
+                  achievements: [
+                    "Built an efficient AI model with 98% accurate prediction."
+                  ]
                 },
                 {
                   title: "Telecom Engineering Technician",
