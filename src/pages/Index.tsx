@@ -107,7 +107,7 @@ const Index = () => {
         {/* Honored to be Featured on Electrical Engineering Portal */}
         <section className="featured-project py-24 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-900 dark:to-gray-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Featured Project</h2>
+            <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Honored to be Featured on Electrical Engineering Portal</h2>
             <div className="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
                 <div className="space-y-4">
@@ -181,7 +181,7 @@ const Index = () => {
                     "Designed and implemented data pipelines using Microsoft Azure tools, improving data flow efficiency by 20%.",
                     "Supported network monitoring and incident management to maintain network performance."
                   ],
-                  achievements: []
+                  achievements: [Built an efficient AI model of 98% accurate prediction]
                 },
                 {
                   title: "Telecom Engineering Technician",
