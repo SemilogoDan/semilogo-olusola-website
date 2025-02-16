@@ -299,6 +299,69 @@ const Index = () => {
           </div>
         </section>
 
+        {/* Work Experience Section */}
+        <section className="work-experience-section py-24 bg-white dark:bg-gray-900">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Work Experience</h2>
+            <div className="space-y-8 max-w-3xl mx-auto">
+              {[
+                {
+                  title: "Data Engineer",
+                  company: "AGFA-GEVAERT GROUP",
+                  location: "Antwerpen, Belgium",
+                  period: "08/2023 – 09/2024",
+                  responsibilities: [
+                    "Developed and deployed AI/ML models for product quality analysis using sensor data and electrical engineering principles.",
+                    "Designed and implemented data pipelines using Microsoft Azure tools, improving data flow efficiency by 20%.",
+                    "Supported network monitoring and incident management to maintain network performance."
+                  ]
+                },
+                {
+                  title: "Telecom Engineering Technician",
+                  company: "IPT POWERTECH AND IHS TELECOM TOWER GROUP",
+                  location: "Lagos, Nigeria",
+                  period: "11/2019 – 08/2021",
+                  responsibilities: [
+                    "Managed IT hardware systems and network infrastructure for telecom clients, improving network reliability.",
+                    "Configuring and maintaining local area networks (LANs) and wide area networks (WANs).",
+                    "Analyzed maintenance data using Python and Excel to optimize resource allocation and predict potential failures.",
+                    "Designed and implemented network architectures, improving overall efficiency by 30%."
+                  ]
+                },
+                {
+                  title: "Automation Engineer",
+                  company: "TLS INTERNATIONAL SERVICE LIMITED",
+                  location: "Lagos, Nigeria",
+                  period: "04/2017 – 11/2019",
+                  responsibilities: [
+                    "Implemented network troubleshooting processes and IT automation, reducing downtime by 30%.",
+                    "Interpreted network circuit diagrams for efficient network connectivity and ensured the integrity of network infrastructure.",
+                    "Used ICT tools to collect, process, and analyze automation system data for trend identification and performance optimization."
+                  ]
+                }
+              ].map((job, index) => (
+                <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                  <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <div>
+                      <h3 className="text-xl font-semibold dark:text-white">{job.title}</h3>
+                      <p className="text-primary font-medium">{job.company}</p>
+                    </div>
+                    <div className="text-gray-600 dark:text-gray-400">
+                      <p>{job.location}</p>
+                      <p>{job.period}</p>
+                    </div>
+                  </div>
+                  <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300">
+                    {job.responsibilities.map((responsibility, idx) => (
+                      <li key={idx}>{responsibility}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Contact Section */}
         <section id="contact" className="contact-section py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
