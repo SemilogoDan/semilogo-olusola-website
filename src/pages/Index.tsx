@@ -93,6 +93,7 @@ const Index = () => {
                     </li>
                   </ul>
                 </div>
+                <h3 className="text-xl font-semibold mb-3">Interests</h3>
                 <ul className="space-y-2 text-gray-600 dark:text-gray-300">
                   <li>✓ Network Infrastructure & Security</li>
                   <li>✓ AI/ML Model Development</li>
