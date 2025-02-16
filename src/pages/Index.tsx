@@ -143,7 +143,7 @@ const Index = () => {
                   title: "Design of Two Stages Operational Amplifier",
                   description: "This project focuses on designing a two-stage operational amplifier to meet key parameters like DC gain, phase margin, and frequency response.",
                   image: "OTA Two stages.png",
-                  link: "https://github.com/SemilogoDan/Analog-Electronics-Design/blob/main/AE2021-2022%20-%20Project%20Report%20Semilogo%20Olusola%20PDF.pdf",
+                  link: "https://github.com/SemilogoDan/Analog-Electronics-Design/tree/main",
                 },
                 {
                   title: "Voice Isolation System",
