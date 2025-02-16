@@ -19,7 +19,7 @@ export const Header = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-8">
             <Link to="/" className="text-xl font-semibold">
-              Portfolio
+              Semilogo
             </Link>
             <nav className="flex space-x-8">
               <Link to="/" className="text-sm font-medium hover:text-primary">
