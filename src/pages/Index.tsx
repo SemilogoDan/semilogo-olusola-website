@@ -73,7 +73,7 @@ const Index = () => {
                   <ul className="space-y-2 text-gray-600 dark:text-gray-300">
                     <li>
                       <a 
-                        href="https://www.scholarship-link.com" 
+                        href="https://imgur.com/35T7Fqa" 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="hover:text-primary"
@@ -83,7 +83,7 @@ const Index = () => {
                     </li>
                     <li>
                       <a 
-                        href="https://www.scholarship-link.com" 
+                        href="https://www.facebook.com/profile/100001585760055/search/?q=OLUFOLAJI%2FCAC%20GLORY%20SCHORLARSHIP%20AWARD" 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="hover:text-primary"
