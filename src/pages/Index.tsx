@@ -111,7 +111,7 @@ const Index = () => {
             <div className="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
                 <div className="space-y-4">
-                  <h3 className="text-2xl font-semibold dark:text-white">11/0.4kV Substation Design - Nigeria</h3>
+                  <h3 className="text-2xl font-semibold dark:text-white">11/0.4kV Substation Design </h3>
                   <p className="text-gray-600 dark:text-gray-300">
                     Comprehensive guide on the design and implementation of 11/0.4kV substations in Nigeria, focusing on power distribution and safety standards.
                   </p>
