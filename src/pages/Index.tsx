@@ -33,9 +33,9 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
                 <img
-                   src="/Profile_pic.jpg" // Reference image directly from the public folder
+                  src="/Profile_pic.jpg"
                   alt="Semilogo Olusola OGUNGBURE"
-                  className="rounded-lg shadow-lg"
+                  className="w-64 h-64 rounded-full mx-auto object-cover shadow-lg"
                 />
                 <div className="flex justify-center mt-6 space-x-4 social-icons">
                   <a
@@ -99,6 +99,38 @@ const Index = () => {
                   <li>✓ Power Systems Design</li>
                   <li>✓ Cloud Technologies</li>
                 </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Featured Project Section */}
+        <section className="featured-project py-24 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-900 dark:to-gray-800">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Featured Project</h2>
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
+                <div className="space-y-4">
+                  <h3 className="text-2xl font-semibold dark:text-white">11/0.4kV Substation Design - Nigeria</h3>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    Comprehensive guide on the design and implementation of 11/0.4kV substations in Nigeria, focusing on power distribution and safety standards.
+                  </p>
+                  <a 
+                    href="https://electrical-engineering-portal.com/download-center/books-and-guides/power-substations/11-0-4kv-ss-nigeria"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-primary text-white dark:bg-white dark:text-gray-900 px-6 py-2 rounded-lg hover:opacity-90 transition-opacity"
+                  >
+                    View Full Project
+                  </a>
+                </div>
+                <div>
+                  <img 
+                    src="https://electrical-engineering-portal.com/res/Substation-11-04kV.jpg" 
+                    alt="11/0.4kV Substation"
+                    className="rounded-lg shadow-md w-full h-full object-cover"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -184,7 +216,7 @@ const Index = () => {
               ))}
             </div>
           </div>
-            </section>
+        </section>
 
         {/* Certifications Section */}
         <section className="certification-section py-24 bg-white dark:bg-gray-900">
@@ -193,30 +225,43 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {[
                 {
-                  title: "AWS Certified AI Practitioner.pdf",
-                  issuer: "Cisco",
-                  date: "Dec 2024"
+                  title: "AWS Certified AI Practitioner",
+                  issuer: "AWS",
+                  date: "Dec 2024",
+                  file: "AWS Certified  AI  Practitioner.pdf"
                 },
                 {
                   title: "IT Automation with Python",
                   issuer: "Google",
-                  date: "Nov 2024"
+                  date: "Nov 2024",
+                  file: "Google IT  Automation with Python GHBWUS1F45HS Coursera .pdf"
                 },
                 {
                   title: "Network Automation Professional",
                   issuer: "Arista Networks",
-                  date: "Dec 2024"
+                  date: "Dec 2024",
+                  file: "Network Automation Professional Certificate by Arista Networks Certificate Of Completion_.pdf"
                 },
                 {
                   title: "Power BI Data Analyst",
                   issuer: "Microsoft AI",
-                  date: "Nov 2024"
+                  date: "Nov 2024",
+                  file: "Power BI Coursera EASHVEE1JIRG.pdf"
                 }
               ].map((cert, index) => (
                 <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
                   <div className="flex items-center gap-4 mb-4">
                     <Medal className="text-primary" size={24} />
-                    <h3 className="text-xl font-semibold">{cert.title}</h3>
+                    <h3 className="text-xl font-semibold">
+                      <a 
+                        href={`/${cert.file}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-primary transition-colors"
+                      >
+                        {cert.title}
+                      </a>
+                    </h3>
                   </div>
                   <p className="text-gray-600 dark:text-gray-400">{cert.issuer} • {cert.date}</p>
                 </div>
@@ -224,6 +269,7 @@ const Index = () => {
             </div>
           </div>
         </section>
+
         {/* Honors & Awards Section */}
         <section className="honors-section py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
