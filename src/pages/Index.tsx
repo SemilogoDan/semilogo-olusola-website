@@ -47,7 +47,7 @@ const Index = () => {
                     <Github size={24} />
                   </a>
                   <a
-                    href="https://www.linkedin.com/in/SemilogoDan"
+                    href="https://www.linkedin.com/in/semilogo-dan-s-ba86b2206/?profileId=ACoAADRttzAB7C_f7mYzKmDqTvcsydKnpoxLhHo"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-600 hover:text-primary transition-colors"
@@ -126,7 +126,7 @@ const Index = () => {
                 </div>
                 <p className="text-gray-600">Federal University of Technology Akure (FUTA) • 2011-2016</p>
                 <p className="text-gray-600 mt-2">
-                  Control Systems, Digital Communication, Power System Analysis
+                  Control Systems, Digital and Wireless Communication, Power System Analysis
                 </p>
               </div>
             </div>
@@ -184,46 +184,54 @@ const Index = () => {
               ))}
             </div>
           </div>
-        </section>
-
-        {/* Certifications Section */}
-        <section className="certification-section py-24 bg-white dark:bg-gray-900">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-center mb-12">Certifications</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              {[
-                {
-                  title: "Networking Basics",
-                  issuer: "Cisco",
-                  date: "Dec 2024"
-                },
-                {
-                  title: "IT Automation with Python",
-                  issuer: "Google",
-                  date: "Nov 2024"
-                },
-                {
-                  title: "Network Automation Professional",
-                  issuer: "Arista Networks",
-                  date: "Dec 2024"
-                },
-                {
-                  title: "Power BI Data Analyst",
-                  issuer: "Microsoft AI",
-                  date: "Nov 2024"
-                }
-              ].map((cert, index) => (
-                <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-                  <div className="flex items-center gap-4 mb-4">
-                    <Medal className="text-primary" size={24} />
-                    <h3 className="text-xl font-semibold">{cert.title}</h3>
+          <section className="certification-section py-24 bg-white dark:bg-gray-900">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <h2 className="text-3xl font-bold text-center mb-12">Certifications</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                {[
+                  {
+                    title: "AWS Certified AI Practitioner.pdf",
+                    file: "/public/AWS-Certified-AI-Practitioner.pdf", // The file path in the public folder
+                    issuer: "Cisco",
+                    date: "Dec 2024"
+                  },
+                  {
+                    title: "IT Automation with Python",
+                    file: "/public/IT-Automation-with-Python.pdf", // The file path in the public folder
+                    issuer: "Google",
+                    date: "Nov 2024"
+                  },
+                  {
+                    title: "Network Automation Professional",
+                    file: "/public/Network-Automation-Professional.pdf", // The file path in the public folder
+                    issuer: "Arista Networks",
+                    date: "Dec 2024"
+                  },
+                  {
+                    title: "Power BI Data Analyst",
+                    file: "/public/Power-BI-Data-Analyst.pdf", // The file path in the public folder
+                    issuer: "Microsoft AI",
+                    date: "Nov 2024"
+                  }
+                ].map((cert, index) => (
+                  <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                    <div className="flex items-center gap-4 mb-4">
+                      <Medal className="text-primary" size={24} />
+                      <a
+                        href={cert.file} // Set the href to the file URL
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xl font-semibold text-blue-500 hover:underline"
+                      >
+                        {cert.title}
+                      </a>
+                    </div>
+                    <p className="text-gray-600 dark:text-gray-400">{cert.issuer} • {cert.date}</p>
                   </div>
-                  <p className="text-gray-600 dark:text-gray-400">{cert.issuer} • {cert.date}</p>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
         {/* Honors & Awards Section */}
         <section className="honors-section py-24">
