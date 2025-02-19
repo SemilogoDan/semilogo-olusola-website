@@ -220,9 +220,9 @@ const Index = () => {
                 <div className="space-y-4">
                   <div>
                     <h4 className="text-lg font-semibold mb-2 dark:text-white">Key Responsibilities</h4>
-                    <ul className="list-disc pl-5 space-y-2 text-gray-600 dark:text-gray-300">
+                    <ul className="list-disc pl-5 space-y-2 text-left text-gray-600 dark:text-gray-300">
                       {job.responsibilities.map((responsibility, idx) => (
-                        <li key={idx} className="ml-30">{responsibility}</li>
+                        <li key={idx} className="ml-4">{responsibility}</li>
                       ))}
                     </ul>
 
@@ -232,9 +232,9 @@ const Index = () => {
                   {job.achievements.length > 0 && (
                     <div>
                       <h4 className="text-lg font-semibold mb-2 dark:text-white">Achievements</h4>
-                      <ul className="list-disc pl-5 space-y-2 text-gray-600 dark:text-gray-300">
+                      <ul className="list-disc pl-5 space-y-2 text-left text-gray-600 dark:text-gray-300">
                         {job.achievements.map((achievement, idx) => (
-                          <li key={idx} className="ml-30">{achievement}</li>
+                          <li key={idx} className="ml-4">{achievement}</li>
                         ))}
                       </ul>
                     </div>
