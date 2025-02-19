@@ -222,7 +222,7 @@ const Index = () => {
                     <h4 className="text-lg font-semibold mb-2 dark:text-white">Key Responsibilities</h4>
                     <ul className="list-disc pl-5 space-y-2 text-gray-600 dark:text-gray-300">
                       {job.responsibilities.map((responsibility, idx) => (
-                        <li key={idx} className="ml-4">{responsibility}</li>
+                        <li key={idx} className="ml-4 list-inside">{responsibility}</li>
                       ))}
                     </ul>
                   </div>
