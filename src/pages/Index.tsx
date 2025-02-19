@@ -172,7 +172,7 @@ const Index = () => {
           <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Work Experience</h2>
           <div className="space-y-12 max-w-3xl mx-auto">
             {[{
-                title: "Data Engineer",
+                title: "Data Scientist",
                 company: "AGFA-GEVAERT GROUP",
                 location: "Antwerpen, Belgium",
                 period: "08/2023 – 09/2024",
