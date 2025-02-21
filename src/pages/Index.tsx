@@ -268,7 +268,7 @@ const Index = () => {
                 {
                   title: "Personal VPN over TOR",
                   description: "Secure personal VPN implementation over the TOR network",
-                  image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
+                  image: "VPN.png",
                   link: "https://medium.com/@SemilogoDan/tor-personal-vpn-exploring-home-based-and-cloud-based-solutions-for-personal-vpn-over-tor-57e6ae0c100d",
                 },
               ].map((project, index) => (
