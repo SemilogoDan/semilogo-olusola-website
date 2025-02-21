@@ -262,7 +262,7 @@ const Index = () => {
                 {
                   title: "Voice Isolation System",
                   description: "Python program using PyTorch to isolate vocals from audio signals",
-                  image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
+                  image: "CNN.png",
                   link: "https://github.com/SemilogoDan/Voice_Isolation",
                 },
                 {
