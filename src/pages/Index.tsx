@@ -15,7 +15,7 @@ const Index = () => {
                 Electrical Engineering
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-                Specializing in Information Communication Technology (ICT) and Power Systems
+                Specializing in Information Communication Technology (ICT), Electronics and Power Systems
               </p>
               <a
                 href="#projects"
