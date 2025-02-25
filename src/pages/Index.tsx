@@ -105,60 +105,33 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Honored to be Featured on Electrical Engineering Portal */}
-        <section className="featured-project py-24 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-900 dark:to-gray-800">
+ {/* Education Section */}
+        <section className="education-section py-24 bg-white dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Honored to be Featured on Electrical Engineering Portal</h2>
-            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
-                <div className="space-y-4">
-                  <h3 className="text-2xl font-semibold dark:text-white">11/0.4kV Substation Design </h3>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    Comprehensive guide on the design and implementation of 11/0.4kV substations in Nigeria, focusing on power distribution and safety standards.
-                  </p>
-                  <a 
-                    href="https://electrical-engineering-portal.com/download-center/books-and-guides/power-substations/11-0-4kv-ss-nigeria"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block bg-primary text-white dark:bg-white dark:text-gray-900 px-6 py-2 rounded-lg hover:opacity-90 transition-opacity"
-                  >
-                    View Full Project
-                  </a>
-                </div>
-                <div>
-                  <img 
-                    src="EEP.png" 
-                    alt="11/0.4kV Substation"
-                    className="rounded-lg shadow-md w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Education Section */}
-        <section className="education-section py-24 bg-gray-50 dark:bg-gray-900">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-center mb-12">Education</h2>
+            <h2 className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">Education</h2>
             <div className="space-y-8 max-w-3xl mx-auto">
-              <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="relative group bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md">
                 <div className="flex items-center gap-4 mb-4">
-                  <GraduationCap className="text-gray-900" size={24} />
-                  <h3 className="text-xl font-semibold">Master of Science in Electrical Engineering</h3>
+                  <GraduationCap className="text-primary dark:text-white" size={24} />
+                  <h3 className="text-xl font-semibold dark:text-white">
+                    Master of Science in Electrical Engineering
+                  </h3>
                 </div>
-                <p className="text-gray-600">Vrije Brussels Universiteit (VUB)/ULB • 2024</p>
-                <p className="text-gray-600 mt-2">
+                <p className="text-gray-600 dark:text-gray-400 text-left">Vrije Brussels Universiteit (VUB)/ULB • 2024</p>
+                <p className="text-gray-600 dark:text-gray-400 mt-2 text-left">
                   Network Security, Communication Networks, Machine Learning & Big Data
                 </p>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-md">
+              
+              <div className="relative group bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md">
                 <div className="flex items-center gap-4 mb-4">
-                  <GraduationCap className="text-gray-900" size={24} />
-                  <h3 className="text-xl font-semibold">Bachelor's in Engineering</h3>
+                  <GraduationCap className="text-primary dark:text-white" size={24} />
+                  <h3 className="text-xl font-semibold dark:text-white">
+                    Bachelor's in Engineering
+                  </h3>
                 </div>
-                <p className="text-gray-600">Federal University of Technology Akure (FUTA) • 2011-2016</p>
-                <p className="text-gray-600 mt-2">
+                <p className="text-gray-600 dark:text-gray-400 text-left">Federal University of Technology Akure (FUTA) • 2011-2016</p>
+                <p className="text-gray-600 dark:text-gray-400 mt-2 text-left">
                   Control Systems, Digital and Wireless Communication, Power System Analysis
                 </p>
               </div>
@@ -351,91 +324,121 @@ const Index = () => {
             </div>
           </div>
         </section>
-
-        {/* Honors & Awards Section */}
-        <section className="honors-section py-24">
+  {/* Honors & Awards Section */}
+        <section className="honors-section py-24 bg-white dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-center mb-12">Honors & Awards</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <div className="flex items-center gap-4 mb-4">
-                  <Award className="text-primary" size={24} />
-                  <h3 className="text-xl font-semibold award-title">Agbami Scholarship</h3>
-                </div>
-                <p className="text-gray-600">Agbami Oilfield • 2013-2016</p>
-                <p className="text-gray-600 mt-2">
-                  Scholarship for Engineering and Medical Professions
-                </p>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <div className="flex items-center gap-4 mb-4">
-                  <Award className="text-primary" size={24} />
-                  <h3 className="text-xl font-semibold award-title">Best Student Award</h3>
-                </div>
-                <p className="text-gray-600">Professor Olufolaji D.B Scholarship Prize • 2014</p>
-                <p className="text-gray-600 mt-2">
-                  Awarded for outstanding academic performance in Year 2
-                </p>
+            <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Honors & Awards</h2>
+            <div className="bg-gray-50 dark:bg-gray-900 p-8 rounded-xl shadow-lg">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto text-left">
+                <a 
+                  href="https://i.imgur.com/35T7Fqa.jpeg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative"
+                >
+                  <div className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105">
+                    <div className="flex items-center gap-4 mb-4">
+                      <Award className="text-primary" size={24} />
+                      <h3 className="text-xl font-semibold award-title group-hover:text-primary transition-colors dark:text-white">
+                        Agbami Scholarship
+                      </h3>
+                    </div>
+                    <p className="text-gray-600 dark:text-gray-400">Agbami Oilfield • 2013-2016</p>
+                    <p className="text-gray-600 dark:text-gray-400 mt-2">
+                      Scholarship for Engineering and Medical Professions
+                    </p>
+                    {/* Hover overlay */}
+                    <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity rounded-xl">
+                      <span className="text-white text-sm">View Scholarship Declaration</span>
+                    </div>
+                  </div>
+                </a>
+
+                <a 
+                  href="https://i.imgur.com/LCkQX43.png"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative"
+                >
+                  <div className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105">
+                    <div className="flex items-center gap-4 mb-4">
+                      <Award className="text-primary" size={24} />
+                      <h3 className="text-xl font-semibold award-title group-hover:text-primary transition-colors dark:text-white">
+                        Best Student Award
+                      </h3>
+                    </div>
+                    <p className="text-gray-600 dark:text-gray-400">Professor Olufolaji D.B Scholarship Prize • 2014</p>
+                    <p className="text-gray-600 dark:text-gray-400 mt-2">
+                      Awarded for outstanding academic performance in Year 2
+                    </p>
+                    {/* Hover overlay */}
+                    <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity rounded-xl">
+                      <span className="text-white text-sm">View Scholarship Declaration</span>
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="contact-section py-24">
+        <section id="contact" className="contact-section py-24 bg-white dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl mx-auto">
-              <h2 className="text-3xl font-bold mb-6">Get In Touch</h2>
-              <p className="text-gray-600 dark:text-gray-300 mb-8">
-                I'm always open to discussing new projects and opportunities.
-              </p>
-              <form className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2">
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    className="w-full px-4 py-2 rounded-lg border focus:ring-2 focus:ring-primary"
-                    placeholder="Your name"
-                    required
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-2">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    className="w-full px-4 py-2 rounded-lg border focus:ring-2 focus:ring-primary"
-                    placeholder="your.email@example.com"
-                    required
-                  />
-                </div>
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium mb-2">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={4}
-                    className="w-full px-4 py-2 rounded-lg border focus:ring-2 focus:ring-primary"
-                    placeholder="Your message"
-                    required
-                  ></textarea>
-                </div>
-                <button
-                  type="submit"
-                  className="w-full bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors"
-                >
-                  Send Message
-                </button>
-              </form>
+            <h2 className="text-3xl font-bold mb-6 text-center dark:text-white">Get In Touch</h2>
+            <div className="bg-gray-50 dark:bg-gray-900 p-8 rounded-xl shadow-lg">
+              <div className="max-w-3xl mx-auto">
+                <p className="text-gray-600 dark:text-gray-300 mb-8">
+                  I'm always open to discussing new projects and opportunities.
+                </p>
+                <form className="space-y-6">
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium mb-2 text-left dark:text-white">
+                      Name
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      className="w-full px-4 py-2 rounded-lg border dark:bg-gray-800 dark:border-gray-600 focus:ring-2 focus:ring-primary"
+                      placeholder="Your name"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium mb-2 text-left dark:text-white">
+                      Email
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      className="w-full px-4 py-2 rounded-lg border dark:bg-gray-800 dark:border-gray-600 focus:ring-2 focus:ring-primary"
+                      placeholder="your.email@example.com"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="message" className="block text-sm font-medium mb-2 text-left dark:text-white">
+                      Message
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows={4}
+                      className="w-full px-4 py-2 rounded-lg border dark:bg-gray-800 dark:border-gray-600 focus:ring-2 focus:ring-primary"
+                      placeholder="Your message"
+                      required
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    className="w-full bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors"
+                  >
+                    Send Message
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </section>
@@ -444,5 +447,6 @@ const Index = () => {
     </div>
   );
 };
+
 
 export default Index;
