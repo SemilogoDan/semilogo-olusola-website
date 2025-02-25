@@ -329,7 +329,7 @@ const Index = () => {
         <section className="honors-section py-24 bg-white dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Honors & Awards</h2>
-            <div className="bg-gray-50 dark:bg-gray-900 p-8 rounded-xl shadow-lg">
+            <div className="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl shadow-lg">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto text-left">
                 <a 
                   href="https://i.imgur.com/35T7Fqa.jpeg"
@@ -337,7 +337,7 @@ const Index = () => {
                   rel="noopener noreferrer"
                   className="group relative"
                 >
-                  <div className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105">
+                  <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105">
                     <div className="flex items-center gap-4 mb-4">
                       <Award className="text-primary" size={24} />
                       <h3 className="text-xl font-semibold award-title group-hover:text-primary transition-colors dark:text-white">
@@ -361,7 +361,7 @@ const Index = () => {
                   rel="noopener noreferrer"
                   className="group relative"
                 >
-                  <div className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105">
+                  <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105">
                     <div className="flex items-center gap-4 mb-4">
                       <Award className="text-primary" size={24} />
                       <h3 className="text-xl font-semibold award-title group-hover:text-primary transition-colors dark:text-white">
@@ -387,7 +387,7 @@ const Index = () => {
         <section id="contact" className="contact-section py-24 bg-white dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold mb-6 text-center dark:text-white">Get In Touch</h2>
-            <div className="bg-gray-50 dark:bg-gray-900 p-8 rounded-xl shadow-lg">
+            <div className="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl shadow-lg">
               <div className="max-w-3xl mx-auto">
                 <p className="text-gray-600 dark:text-gray-300 mb-8">
                   I'm always open to discussing new projects and opportunities.
