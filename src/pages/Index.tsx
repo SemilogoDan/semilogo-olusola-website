@@ -11,7 +11,7 @@ const Index = () => {
         <section id= "home" className="bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
             <div className="text-center">
-              <h1 className="text-4xl sm:text-6xl font-bold text-gray-900 dark:text-white mb-6">
+              <h1 className="text-4xl sm:text-6xl font-bold text-gray-800 dark:text-white mb-6">
                 Electrical Engineering
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
@@ -111,7 +111,7 @@ const Index = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-white">Education</h2>
             <div className="space-y-8 max-w-3xl mx-auto">
-              <div className="relative group bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md">
+              <div className="relative group bg-white dark:bg-gray-800 p-8 rounded-xl shadow-md">
                 <div className="flex items-center gap-4 mb-4">
                   <GraduationCap className="text-primary dark:text-white" size={24} />
                   <h3 className="text-xl font-semibold dark:text-white">
