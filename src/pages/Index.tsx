@@ -26,84 +26,85 @@ const Index = () => {
             </div>
           </div>
         </section>
-
-        {/* About Section */}
-        <section id="about" className="about-section py-24">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-              <div>
-                <img
-                  src="/Profile_pic.jpg"
-                  alt="Semilogo Olusola OGUNGBURE"
-                  className="w-64 h-64 rounded-full mx-auto object-cover shadow-lg"
-                />
-                <div className="flex justify-center mt-6 space-x-4 social-icons">
-                  <a
-                    href="https://github.com/SemilogoDan"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-600 hover:text-primary transition-colors"
-                  >
-                    <Github size={24} />
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/semilogo-dan-s-ba86b2206/?profileId=ACoAADRttzAB7C_f7mYzKmDqTvcsydKnpoxLhHo"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-600 hover:text-primary transition-colors"
-                  >
-                    <Linkedin size={24} />
-                  </a>
-                  <a
-                    href="mailto:semilogoolusola@gmail.com"
-                    className="text-gray-600 hover:text-primary transition-colors"
-                  >
-                    <Mail size={24} />
-                  </a>
-                </div>
-              </div>
-              <div>
-                <h2 className="text-3xl font-bold mb-6">About Me</h2>
-                <p className="text-gray-600 dark:text-gray-300 mb-6">
-                  Recent graduate with a Master's degree in Electrical Engineering, specializing in Information Communication Technology (ICT).
-                  Possessing hands-on experience with LAN/WAN systems, Software Defined Networking (SDN), and network security.
-                </p>
-                <div className="mb-6">
-                  <h3 className="text-xl font-semibold mb-3">Scholarships</h3>
-                  <ul className="space-y-2 text-gray-600 dark:text-gray-300">
-                    <li>
-                      <a 
-                        href="https://imgur.com/35T7Fqa" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="hover:text-primary"
-                      >
-                        ✓ Agbami Scholarship (2013-2016)
-                      </a>
-                    </li>
-                    <li>
-                      <a 
-                        href="https://www.facebook.com/profile/100001585760055/search/?q=OLUFOLAJI%2FCAC%20GLORY%20SCHORLARSHIP%20AWARD" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="hover:text-primary"
-                      >
-                        ✓ Professor Olufolaji D.B Scholarship Prize (2014)
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <h3 className="text-xl font-semibold mb-3">Interests</h3>
-                <ul className="space-y-2 text-gray-600 dark:text-gray-300">
-                  <li>✓ Network Infrastructure & Security</li>
-                  <li>✓ AI/ML Model Development</li>
-                  <li>✓ Power Systems Design</li>
-                  <li>✓ Cloud Technologies</li>
-                </ul>
-              </div>
-            </div>
+{/* About Section */}
+<section id="about" className="about-section py-24 bg-white dark:bg-gray-900">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <img
+            src="/Profile_pic.jpg"
+            alt="Semilogo Olusola OGUNGBURE"
+            className="w-64 h-64 rounded-full mx-auto object-cover shadow-lg"
+          />
+          <div className="flex justify-center mt-6 space-x-4 social-icons">
+            <a
+              href="https://github.com/SemilogoDan"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors"
+            >
+              <Github size={24} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/semilogo-dan-s-ba86b2206/?profileId=ACoAADRttzAB7C_f7mYzKmDqTvcsydKnpoxLhHo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors"
+            >
+              <Linkedin size={24} />
+            </a>
+            <a
+              href="mailto:semilogoolusola@gmail.com"
+              className="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors"
+            >
+              <Mail size={24} />
+            </a>
           </div>
-        </section>
+        </div>
+        <div>
+          <h2 className="text-3xl font-bold mb-6 text-left dark:text-white">About Me</h2>
+          <p className="text-gray-600 dark:text-gray-300 mb-6 text-left">
+            I am a recent graduate with a Master's degree in Electrical Engineering, driven by a passion for ICT/IT, Cybersecurity, Automation, electronics, and Artificial Intelligence/Machine Learning (AI/ML). My academic journey and field experience have has  given me a strong foundation in digital technology and electronic systems. I am excited about using cutting-edge ICT tools, innovative electronics, and data-driven AI/ML solutions to tackle real world challenges. Eager to learn, grow, and contribute, I look forward to embarking on a dynamic career where I can continuously innovate and make a lasting impact.
+          </p>
+          <div className="mb-6">
+            <h3 className="text-xl font-semibold mb-3 text-left dark:text-white">Scholarships</h3>
+            <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-left">
+              <li>
+                <a 
+                  href="https://imgur.com/35T7Fqa" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-primary dark:hover:text-primary"
+                >
+                  ✓ Agbami Scholarship (2013-2016)
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://www.facebook.com/profile/100001585760055/search/?q=OLUFOLAJI%2FCAC%20GLORY%20SCHORLARSHIP%20AWARD" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-primary dark:hover:text-primary"
+                >
+                  ✓ Professor Olufolaji D.B Scholarship Prize (2014)
+                </a>
+              </li>
+            </ul>
+          </div>
+          <h3 className="text-xl font-semibold mb-3 text-left dark:text-white">Interests</h3>
+          <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-left">
+            <li>✓ Network Infrastructure & Security</li>
+            <li>✓ AI/ML Model Development</li>
+            <li>✓ Power Systems Design</li>
+            <li>✓ Cloud Technologies</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
  {/* Education Section */}
         <section className="education-section py-24 bg-white dark:bg-gray-900">
