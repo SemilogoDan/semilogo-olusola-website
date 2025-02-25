@@ -29,7 +29,7 @@ const Index = () => {
 {/* About Section */}
 <section id="about" className="about-section py-24 bg-white dark:bg-gray-900">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg">
+    <div className="bg-white dark:bg-gray-700 p-8 rounded-xl shadow-lg">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div>
           <img
