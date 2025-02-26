@@ -243,7 +243,7 @@ const Index = () => {
                   title: "Audio Signal Processing for Voice Communication",
                   description:
                     "Applied signal processing techniques (STFT, spectrogram analysis) and deep learning architectures (CNN, U-Net) to enhance voice quality and reduce noise in communication systems.",
-                  image: "CNN", // Update with your correct image filename if needed
+                  image: "/CNN.png", // Update with your correct image filename if needed
                   link: "https://github.com/SemilogoDan/Voice_Isolation",
                 },
               ].map((project, index) => (
