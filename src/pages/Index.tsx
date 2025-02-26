@@ -189,7 +189,7 @@ const Index = () => {
                   achievements: []
                 }
               ].map((job, index) => (
-                <div key={index} className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg">
+                <div key={index} className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg">
                   <h3 className="text-2xl font-semibold dark:text-white mb-2">{job.title}</h3>
                   <p className="text-primary font-medium mb-1">{job.company}, {job.location}</p>
                   <p className="text-gray-600 dark:text-gray-400 mb-6">{job.period}</p>
