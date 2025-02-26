@@ -226,23 +226,26 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
-                  title: "Simulation of Wireless Channels & Digital Communications",
-                  description: "Designed and implemented a MIMO-OFDM transceiver for wireless communications using Software Defined Radios (SDRs) to validate performance in multipath environments.",
-                  image: "WirelessSimulation.png",
-                  link: "https://github.com/SemilogoDan/MIMO-OFDM-Simulation"
+                  title: "Simulation of Wireless Channels and Digital Communications",
+                  description:
+                    "Designed and implemented a real-life MIMO-OFDM transceiver for wireless communications using SDRs to validate performance in multipath environments.",
+                  image: "WirelessSimulation.png", // Update with your correct image filename if needed
+                  link: "https://github.com/SemilogoDan/Wireless-Communication-Channel_Digital-Communication?tab=readme-ov-file#introduction",
                 },
                 {
-                  title: "IPSec VPN Configuration for Secure Communication",
-                  description: "Configured a site-to-site IPSec VPN tunnel between Cisco routers using GNS3, significantly reducing unauthorized access attempts.",
-                  image: "IPSecVPN.png",
-                  link: "https://github.com/SemilogoDan/IPSec-VPN-Configuration"
+                  title: "Communication Networks Protocol (IPSec VPN Configuration)",
+                  description:
+                    "Configured a site-to-site IPSec VPN tunnel between Cisco routers using GNS3 and Virtual Machine, reducing unauthorized access attempts by 95% and optimizing network traffic.",
+                  image: "IPSecVPN.png", // Update with your correct image filename if needed
+                  link: "https://github.com/SemilogoDan/Communication-Network-Protocol",
                 },
                 {
                   title: "Audio Signal Processing for Voice Communication",
-                  description: "Implemented signal processing techniques and deep learning (CNN, U-Net) to enhance voice quality and reduce noise in communication systems.",
-                  image: "AudioSignal.png",
-                  link: "https://github.com/SemilogoDan/Audio-Signal-Processing"
-                }
+                  description:
+                    "Applied signal processing techniques (STFT, spectrogram analysis) and deep learning architectures (CNN, U-Net) to enhance voice quality and reduce noise in communication systems.",
+                  image: "AudioSignal.png", // Update with your correct image filename if needed
+                  link: "https://github.com/SemilogoDan/Voice_Isolation",
+                },
               ].map((project, index) => (
                 <div key={index} className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg group relative">
                   <a href={project.link} target="_blank" rel="noopener noreferrer">
@@ -271,7 +274,7 @@ const Index = () => {
             </div>
           </div>
         </section>
-        
+
         {/* Certifications Section */}
         <section className="certification-section py-24 bg-white dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
