@@ -229,14 +229,14 @@ const Index = () => {
                   title: "Simulation of Wireless Channels and Digital Communications",
                   description:
                     "Designed and implemented a real-life MIMO-OFDM transceiver for wireless communications using SDRs to validate performance in multipath environments.",
-                  image: "WirelessSimulation.png", // Update with your correct image filename if needed
+                  image: "WCCDC.png", // Update with your correct image filename if needed
                   link: "https://github.com/SemilogoDan/Wireless-Communication-Channel_Digital-Communication?tab=readme-ov-file#introduction",
                 },
                 {
                   title: "Communication Networks Protocol (IPSec VPN Configuration)",
                   description:
                     "Configured a site-to-site IPSec VPN tunnel between Cisco routers using GNS3 and Virtual Machine, reducing unauthorized access attempts by 95% and optimizing network traffic.",
-                  image: "IPSecVPN.png", // Update with your correct image filename if needed
+                  image: "Network_protocol.png", // Update with your correct image filename if needed
                   link: "https://github.com/SemilogoDan/Communication-Network-Protocol",
                 },
                 {
